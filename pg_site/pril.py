@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, jsonify
-from data import db_session, news_api, jobs_api
+from data import db_session
 from data.users import User
 from data.news import News
 from flask import make_response
@@ -84,11 +84,4 @@ def index():
 
 def main():
     db_session.global_init("db/blogs.db")
-    app.register_blueprint(news_api.blueprint)
-    app.register_blueprint(jobs_api.blueprint)
     app.run(port=5000, host='127.0.0.1')
-
-
-
-if __name__ == '__main__':
-    main()
