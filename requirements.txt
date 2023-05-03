@@ -3,4 +3,4 @@ SQLAlchemy-serializer==1.4.1
 WTForms==3.0.1
 Flask-WTF==1.1.1
 Flask-Login==0.6.2
-Flask==2.3.1
+Flask==2.2.1
